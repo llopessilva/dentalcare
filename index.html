@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <!-- Fonts -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+    </style>
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/0348a35324.js"></script>
+
+    <title>DentalCare</title>
+  </head>
+  <body>
+    <nav id="navigation">
+      <div class="wrapper">
+        <a class="logo" href="#home">Dental<span>Care</span></a>
+
+        <div class="menu">
+          <ul>
+            <li>
+              <a onclick="closeMenu()" href="#home">Início</a>
+            </li>
+            <li>
+              <a onclick="closeMenu()" href="#services">Serviços</a>
+            </li>
+            <li>
+              <a onclick="closeMenu()" href="#about">Sobre</a>
+            </li>
+          </ul>
+          <a class="button" href="#contact" onclick="closeMenu()"
+            >Agende sua consulta</a
+          >
+          <ul class="social-links">
+            <li>
+              <a href="https://instagram.com/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://facebook.com/" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://youtube.com/" target="_blank">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <button
+          aria-expanded="false"
+          aria-label="Abrir menu"
+          onclick="openMenu()"
+          class="open-menu"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <button
+          aria-expanded="true"
+          aria-label="Fechar menu"
+          onclick="closeMenu()"
+          class="close-menu"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+    </nav>
+
+    <section id="home">
+      <div class="wrapper">
+        <div class="col-a">
+          <header>
+            <h4>BOAS VINDAS A DENTALCARE 👋</h4>
+            <h1>Assistência odontológica simplificada para todos</h1>
+          </header>
+          <div class="content">
+            <p>
+              Os especialistas da DentalCare vão além dos sintomas para tratar a
+              causa raiz de sua doença e proporcionar uma cura a longo prazo
+            </p>
+            <a class="button" href="#contact">
+              <i class="fa-brands fa-whatsapp"></i>
+              Agende sua consulta
+            </a>
+          </div>
+        </div>
+
+        <div class="col-b">
+          <img
+            src="./assets/mulheres-brancas-com-jaqueta-jeans-azul-sorrindo.png"
+            alt="Mulher negra vestindo moletom verde com as duas mãos no peito e sorrindo"
+          />
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <h3>+3.500</h3>
+            <p>Pacientes atendidos</p>
+          </div>
+          <div class="stat">
+            <h3>+15</h3>
+            <p>Especialistas disponíveis</p>
+          </div>
+          <div class="stat">
+            <h3>+10</h3>
+            <p>Anos no mercado</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="wrapper">
+        <header>
+          <h4>Serviços</h4>
+          <h2>Como podemos ajudá-lo a se sentir melhor?</h2>
+        </header>
+
+        <div class="content">
+          <div class="cards">
+            <div class="card">
+              <i class="fa-regular fa-circle-check"></i>
+              <h3>Clareamento Dental</h3>
+              <p>
+                Existem diversas maneiras de se realizar esse tipo de
+                procedimento, entre as quais o profissional responsável
+                escolherá a que melhor se aplica a cada caso. O objetivo do
+                clareamento dental é recuperar a cor natural dos dentes, que
+                acaba sendo prejudicada por diversos fatores ao longo do tempo.
+              </p>
+            </div>
+            <div class="card">
+              <i class="fa-regular fa-circle-check"></i>
+              <h3>Restaurações Estéticas</h3>
+              <p>
+                As restaurações estéticas são realizadas a partir da inserção de
+                resina em locais danificados da arcada dentária. Esse
+                procedimento tem como fim recuperar função e a forma da região
+                afetada.
+              </p>
+            </div>
+            <div class="card">
+              <i class="fa-regular fa-circle-check"></i>
+              <h3>Lente de Contato Dental</h3>
+              <p>
+                Em busca de melhorar a estética do sorriso, muitos pacientes têm
+                optado pelas lentes de contato dentais. Através da inserção
+                dessas finas próteses de porcelana na região anterior dos dentes
+                é possível ajustar a cor, o tamanho e o formato dos dentes.
+              </p>
+            </div>
+            <div class="card">
+              <i class="fa-regular fa-circle-check"></i>
+              <h3>Endodontia</h3>
+              <p>
+                O tratamento consiste em uma remoção completa da polpa (nervo)
+                que se encontra dentro da raíz dentária. Após isso é realizado o
+                selamento da região para impedir novas contaminações. O processo
+                é realizado rapidamente e é completamente automatizado. O
+                pós-operatório é na maioria das vezes bem rápido e sem
+                complicações.
+              </p>
+            </div>
+            <div class="card">
+              <i class="fa-regular fa-circle-check"></i>
+              <h3>Ortodontia</h3>
+              <p>
+                O tratamento pode ser realizado tanto por aparelhos fixos quanto
+                removíveis. A ortodontia trabalha o reposicionamento dos dentes
+                através da aplicação de pressão sobre os mesmos e sobre os ossos
+                maxilares. Essa força executada pelos aparelhos contribui para a
+                retração muscular e é capaz de alterar o crescimento da
+                mandíbula, contribuindo para uma remodelação da arcada dentária.
+              </p>
+            </div>
+            <div class="card">
+              <i class="fa-regular fa-circle-check"></i>
+              <h3>Prótese Dental</h3>
+              <p>
+                Com a inserção da prótese há recuperação das funções
+                mastigatórias e fonéticas do paciente, além de melhorias em sua
+                autoestima. A falta de dentição prejudica diretamente a função
+                mastigatória do indivíduo, o que pode vir a acarretar problemas
+                digestivos, já que esse processo se inicia ainda na boca.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrapper">
+        <div class="col-a">
+          <header>
+            <h4>Sobre nós</h4>
+            <h2>Entenda quem somos e por que existimos</h2>
+          </header>
+          <div class="content">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error
+              quis, officia delectus provident maxime dolores perferendis rem
+              illo adipisci, nihil corporis quidem nesciunt itaque dolore
+              explicabo pariatur commodi optio praesentium quaerat saepe. Quam
+              reiciendis illo blanditiis fugiat, quae placeat, eligendi dicta
+              velit iste, molestias laborum itaque ullam necessitatibus cum
+              tempore. Ea error porro facilis totam labore.
+            </p>
+          </div>
+        </div>
+        <div class="col-b">
+          <img
+            class="image"
+            src="./assets/two-dentists-doing-their-work-in-dentist-s-clinic.jpg"
+            alt="Médico feliz segurando uma prancheta com pacientes"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrapper">
+        <div class="col-a">
+          <header>
+            <h2>Entre em contato com a gente</h2>
+          </header>
+          <div class="content">
+            <ul>
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                R. Amauri Souza, 346
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                contato@doctorcare.com
+              </li>
+            </ul>
+            <a
+              class="button"
+              href="https://wa.me/5511987654321"
+              target="_blank"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+              Agende sua consulta
+            </a>
+          </div>
+        </div>
+
+        <div class="col-b">
+          <img
+            class="image"
+            src="./assets/homem-negro-de-touca-com-celular-na-mao.jpg"
+            alt="Homem negro com moletom bege mexendo no celular e sorrindo"
+          />
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrapper">
+        <div class="col-a">
+          <a class="logo" href="#home">Dental<span>Care</span> </a>
+          <p>
+            &copy;2022 DoctorCare
+            <br />
+            Todos os direitos reservados
+          </p>
+        </div>
+
+        <div class="col-b">
+          <ul class="social-links">
+            <li>
+              <a href="https://instagram.com/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://facebook.com/" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://youtube.com/" target="_blank">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- backToTopButton -->
+    <a id="backToTopButton" href="#home">
+      <i id="arrowUp" class="fa-solid fa-circle-arrow-up"></i>
+    </a>
+
+    <!-- ScrollReveal Lib -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Scripts -->
+    <script src="./main.js"></script>
+  </body>
+</html>
