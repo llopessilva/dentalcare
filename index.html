@@ -5,7 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- CSS -->
+    <!-- Swipper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+    <!-- Styles CSS -->
     <link rel="stylesheet" href="./css/styles.css" />
 
     <!-- Fonts -->
@@ -200,6 +206,66 @@
       </div>
     </section>
 
+    <section id="testimonials">
+      <div">
+        <header>
+          <h2>Depoimentos de quem já passou por aqui</h2>
+        </header>
+
+        <div class="testimonials swiper-container">
+          <div class="swiper-wrapper">
+            <div class="testimonial swiper-slide">
+              <blockquote>
+                <p>
+                  <span>&ldquo;</span>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero
+                  praesentium cupiditate hic dolorum fugiat sequi neque unde
+                  beatae quam eius.
+                </p>
+                <cite>
+                  <img src="assets/8.jpg" alt="Foto de Wanessa Souza" />
+                  Wanessa Souza
+                </cite>
+              </blockquote>
+            </div>
+
+            <div class="testimonial swiper-slide">
+              <blockquote>
+                <p>
+                  <span>&ldquo;</span>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero
+                  praesentium cupiditate hic dolorum fugiat sequi neque unde
+                  beatae quam eius.
+                </p>
+                <cite>
+                  <img src="assets/71.jpg" alt="Foto de Franciele Venega" />
+                  Franciele Venega
+                </cite>
+              </blockquote>
+            </div>
+
+            <div class="testimonial swiper-slide">
+              <blockquote>
+                <p>
+                  <span>&ldquo;</span>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero
+                  praesentium cupiditate hic dolorum fugiat sequi neque unde
+                  beatae quam eius.
+                </p>
+                <cite>
+                  <img src="assets/76.jpg" alt="Foto de Fabricio Dantas" />
+                  Fabricio Dantas
+                </cite>
+              </blockquote>
+            </div>
+          </div>
+
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
     <section id="about">
       <div class="wrapper">
         <div class="col-a">
@@ -243,7 +309,7 @@
               </li>
               <li>
                 <i class="fa-solid fa-envelope"></i>
-                contato@doctorcare.com
+                contato@dentalcare.com
               </li>
             </ul>
             <a
@@ -272,7 +338,7 @@
         <div class="col-a">
           <a class="logo" href="#home">Dental<span>Care</span> </a>
           <p>
-            &copy;2022 DoctorCare
+            &copy;2022 DentalCare
             <br />
             Todos os direitos reservados
           </p>
@@ -297,6 +363,7 @@
             </li>
           </ul>
         </div>
+        <p class="credits">Projeto desenvolvido por Lucas Lopes</p>
       </div>
     </footer>
 
@@ -307,6 +374,9 @@
 
     <!-- ScrollReveal Lib -->
     <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Swipper JS-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!-- Scripts -->
     <script src="./main.js"></script>
